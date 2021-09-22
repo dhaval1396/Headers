@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+header .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+}
+.container {
+    max-width: 1400px !important;
+}
+header nav {
+    background-color: #ffffff !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important; 
+    position: fixed;
+    z-index: 999;
+    transition: .5s;
+    -webkit-transition-timing-function: ease-out;
+}
+.navbgchnage {
+    top: 0px;
+    position: fixed !important;
+    width: 100%;
+    transition: .5s;
+    -webkit-transition-timing-function: ease-out;
+    box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.1);
+}
+.desktoplogo img {
+    max-height: 165px;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #bd7f52;
+    text-decoration: none;
+    background-color: transparent !important;
+}
+header nav .desktoplogo .navbar-brand {
+    padding: 0 !important;
+    margin-right: 0px;
+}
+header nav .navbar-nav .nav-item {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*header nav .navbar-nav .nav-item.active .nav-link {
+    color: #ffc107 !important;
+    font-weight: bold;
+} */
+header nav .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+header nav .navbar-nav .nav-item .nav-link:hover {
+    /*color: #ffc107 !important;*/
+}
+header nav .dropdown-menu {
+    top: 60px;
+    border: 0px solid transparent;
+    padding: 0px 0px 0px 0px !important;
+    background-color: #bd7f52;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 3px rgba(0,0,0,0.23) !important;
+    min-width: 180px;
+}
+header nav .baricon {
+    background-color: transparent;
+    padding: 5px 16px;
+    border: 0px solid white !important;
+    box-shadow: unset;
+    outline: none !important;
+} 
+header nav .baricon .navbarbarndicon {
+    color: white;
+    font-size: 25px;
+}
+.menu-left-side-div {
+    width: 100%;
+}
+.menu-center-side-div {
+    width: 50%;
+    position: relative;
+}
+.menu-right-side-div {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-end;
+}
+.home-icon {
+    color: #bd7f52;
+    font-size: 26px !important;
+    position: relative;
+    top: -2px;
+}
+.menu-border-right-div {
+    border-right: 1px solid #dddddd;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.mobilelogo {
+    display: none !important;
+}
+
+.dropcolor {
+    padding: 5px 0px !important;
+}
+.dropcolor a {
+    color: #ffffff;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.dropcolor i {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 100;
+    margin-right: 3px;
+    position: relative;
+    top: -1px;
+}
+.dropcolor .dropdown-item:hover {
+    color: #000000;
+    transition: .3s;
+}
+.dropcolor .dropdown-item:hover i {
+    color: #000000;
+    transition: .3s;
+}
+
+
+.ekko-lightbox-nav-overlay a span {
+    padding: 0 20px !important;
+    color: white;
+    max-width: 60px;
+    font-size: 35px;
+    background-color: #00000080;
+}
+.ekko-lightbox-nav-overlay a:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*-------- Section css -----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- Media Query ----------------------*/
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 540px !important;
+    }
+    header nav {
+        background-color: #bd7f52 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    
+    .mob-banner-img {
+        display: block !important;
+        width: 100%;
+    }
+    .desk-banner-img {
+        display: none !important;
+    }
+    header nav .dropdown-menu {
+        min-width: inherit;
+    }
+    .mobilelogo img {
+        max-width: 75px;
+    }
+    .menu-border-right-div {
+        border-right: 0px;
+    }
+    .home-icon {
+        color: white;
+    }
+    header nav .navbar-nav .nav-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {  
+    header nav {
+        background-color: #bd7f52 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .mobilelogo img {
+        max-width: 75px;
+    }
+    .menu-border-right-div {
+        border-right: 0px solid #dddddd;
+    }
+    .home-icon {
+        color: white;
+    }
+    header nav .navbar-nav .nav-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    header nav .dropdown-menu {
+        min-width: inherit;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px !important;
+    }
+    header nav .navbar-nav .nav-item .nav-link {
+        font-size: 13px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .desktoplogo img {
+        max-width: 115px;
+    }
+    .desktoplogo img {
+        top: 45px;
+    }
+    header nav {
+        padding-left: 1% !important;
+        padding-right: 1% !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .home-icon {
+        font-size: 20px !important;
+        top: 0px;
+    }
+    header nav .navbar-nav .nav-item {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    header nav .dropdown-menu {
+        min-width: inherit;
+        top: 50px;
+    }
+    .dropcolor a {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .dropcolor i {
+        font-size: 10px;
+    }
+    
+}
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    header nav .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .desktoplogo img {
+        max-width: 140px;
+        top: 50px;
+    }
+    header nav .navbar-nav .nav-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header nav {
+        padding-left: 1% !important;
+        padding-right: 1% !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    header nav .dropdown-menu {
+        min-width: inherit;
+        top: 50px;
+    }
+    .dropcolor a {
+        font-size: 15px;    
+    }
+    
+}
+@media only screen and (min-width: 1441px) and (max-width: 1660px) { 
+    header nav .navbar-nav .nav-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header nav .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    header nav {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    .desktoplogo img {
+        max-height: 135px;
+        top: 60px;
+    }
+    header nav .dropdown-menu {
+        min-width: inherit;
+    }
+    
+    
+}
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .desktoplogo {
+        display: none;
+    }
+    .mobilelogo {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .row-reverse {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    header nav .navbar-nav .nav-item .nav-link {
+        color: white !important;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+   
+}
+
+
+
+
+
